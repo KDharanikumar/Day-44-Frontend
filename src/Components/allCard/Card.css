@@ -1,0 +1,49 @@
+:root {
+  --cardWidth: 240px;
+  --cardHeight: 280px;
+  --cardMargin: 9px;
+}
+
+.main-section {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cards {
+  width: var(--cardWidth);
+  height: var(--cardHeight);
+  margin: var(--cardMargin);
+  border-radius: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  position: relative;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+}
+
+.Long {
+  display: flex;
+  border-style: none;
+  border-color: transparent;
+  overflow: auto;
+  outline: none;
+  width: 14rem;
+}
+.Long::-webkit-scrollbar {
+  display: none;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
